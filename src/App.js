@@ -6,16 +6,17 @@ function App() {
   return (
     <div className="App container p-0 bg-white mt-5 col-md-6 br-5" style={{borderRadius: "1.5rem"}}>
         <div className='row m-0 p-0 d-flex'>
-          <div className='col-md-6 col-sm-12 m-0 p-0'>
+          <div className='col-md-6 col-sm-12 m-0 p-0 left-img'>
             <picture>
-            <source media='(min-width:650px)' srcSet={Product2}/>
-              <img src={Product1}/>
+              <source className='my-pic' media='(max-width:765px)' srcSet={Product2}/>
+              <source className='my-pic' media='(min-width:766px)' srcSet={Product1}/>
+              <img className='my-pic' src={Product1}/>
             </picture>
           </div>
           <div className='col-md-6 col-sm-12 ps-3 mt-3'>
             <p style={{color: "hsl(158, 36%, 37%)", fontSize: "1rem"}}>P E R F U M E</p>
             <h1 style={{fontFamily:"Montserrat", fontWeight:"700"}}>Gabrielle Essence Eau De Parfum</h1>
-            <p style={{color: "hsl(158, 36%, 37%)"}}>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+            <p style={{color: "hsl(158, 36%, 37%)", fontFamily:"Fraunces"}}>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
   Perfumer-Creator for the House of CHANEL.</p>
             <div className='row'>
               <br/>
