@@ -20,7 +20,7 @@ function App() {
   Perfumer-Creator for the House of CHANEL.</p>
             <div className='row'>
               <br/>
-              <h2 style={{color: "hsl(158, 36%, 37%)"}} className='col-6'>$149.99</h2>
+              <h2 style={{color: "hsl(158, 36%, 37%)", fontFamily:"Montserrat", fontWeight:"700"}} className='col-6'>$149.99</h2>
               <span className='col-6 mt-2'><del>$169.99</del></span>
             </div>
             <button className='btn text-white col-9 mt-4' style={{backgroundColor: "hsl(158, 36%, 37%)", fontWeight: "bold"}}>
